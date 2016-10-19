@@ -4,6 +4,9 @@ Update ALL the named colours to create a monochromatic scheme
 Style the menus - one horizontally and one vertically
 Add the hover/active effects to your menu items
 ***************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px');
+
 *{
     padding: 0;
     margin: 0;
@@ -13,21 +16,21 @@ html{
     font-size: 16px;
     line-height: 1.6;
     /* ADD the Google sans-serif font to this font stack */
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Open Sans', Verdana, sans-serif;
 }
 html, body{
-    background-color: salmon;
+    background-color: #FFF3Ec;
 }
 h1{
     font-size: 6.854rem;
     /* ADD the Google serif font to this font stack */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+    font-family: 'Slabo 27px', Georgia, serif; 
     padding: 1rem 2rem;
 }
 h2{
     font-size: 4.23rem;
     /* ADD the Google serif font to this font stack */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-family: 'Slabo 27px', Georgia, serif;
     padding: 1rem 2rem;
 }
 nav li{
@@ -41,18 +44,20 @@ p{
     max-width: 1400px; 
     width: 80%;
     margin: 0 auto;
-    background-color: chartreuse;
-    color: rebeccapurple;
+    background-color: #7F5842;
+    color: #CC4900;
 }
 header{
-    border-bottom: 0.8rem solid khaki;
-    background-color: cornflowerblue;
-    color: aliceblue;
+    border-bottom: 0.8rem solid #FF5C00;
+    background-color: #7F2E00;
+    color: #CC4900;
 }
 .menu-h{
     width: 100%;
 }
     .menu-h li{
+        list-style: none;
+        display: inline;
         /* style the list items to remove the bullets 
         and line up horizontally
         and take up 20% of the width of the ul */
@@ -72,6 +77,9 @@ header{
     float:left;
 }
     .menu-v li{
+        list-style: none;
+        display: block;
+        width: 100%;
         /* style the list items to remove the bullets 
         and line up vertically
         and take up 100% of the width of the ul */
@@ -79,11 +87,12 @@ header{
         .menu-v a,
         .menu-v a:link,
         .menu-v a:visited{
+            width: 100%;
             /* style the anchors to fill the entire width of the li */
         }
         .menu-v a:hover,
         .menu-v a:active{
-            
+            width: 100%;
         }
 main{
     width:80%;
