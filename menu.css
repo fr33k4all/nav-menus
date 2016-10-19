@@ -43,6 +43,9 @@ header{
     background-color: #7F2E00;
     color: #FF5C00;
 }
+a {
+    color: #FF5C00;
+}
 .menu-h{
     width: 100%;
 }
